@@ -11,6 +11,7 @@ def bake_time_remaining(time: int) -> int:
     an argument and returns how many minutes the lasagna still needs to bake
     based on the `EXPECTED_BAKE_TIME`.
     '''
+    
     return EXPECTED_BAKE_TIME - time
 def preparation_time_in_minutes(layers: int) -> int:
     """
@@ -26,5 +27,5 @@ def elapsed_time_in_minutes(number_of_layers: int, elapsed_bake_time: int) -> in
     :return: int total of time elapsed into the prepare of lasagna
     Function that takes as param elapsed time and total of layers and returns the sum of time elapsed in prepare and in oven
     """
-    
+
     return preparation_time_in_minutes(number_of_layers) + elapsed_bake_time
